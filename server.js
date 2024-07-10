@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname,'build')));
 app.get('*/', function(req,res){
   res.sendFile(path.join(__dirname,'build','index.html'));
 });
-// Yes, the branch2 is here
+//yes, the main is here before rebase
 const PORT=process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on ${PORT}`);
